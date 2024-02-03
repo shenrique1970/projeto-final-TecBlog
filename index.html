@@ -4,41 +4,38 @@
 <head>
 	<title>TecBlog - O seu Blog de tecnologia</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
 
-	<header>
-
-		<div id="logo">
-			<h1>Tec<span class="branco">Blog</span></h1>
+	<div class="grid-container">
+		<div class="item1">
+			<div id="logo">
+				<h1>Tec<span class="branco">Blog</span></h1>
+			</div>
+			<div id="area-menu">
+				<nav>
+					<a href="jogos.html">Jogos</a>
+					<a href="celulares.html">Celulares</a>
+					<a href="informatica.html">Informática</a>
+					<a href="eletronicos.html">Eletrônicos</a>
+				</nav>
+			</div>
 		</div>
-		<div id="area-menu">
-			<nav>
-				<a href="jogos.html">Jogos</a>
-				<a href="celulares.html">Celulares</a>
-				<a href="informatica.html">Informática</a>
-				<a href="eletronicos.html">Eletrônicos</a>
-			</nav>
+		<div class="item2">
+			<aside class="conteudo-lateral">
+				<h3>Categorias</h3>
+
+				<a href="">Jogos</a><br>
+				<a href="">Celulares</a><br>
+				<a href="">Informática</a><br>
+				<a href="">Eletrônicos</a><br>
+
+			</aside>
 		</div>
-
-	</header>
-
-	<main class="grid">
-
-		<aside class="conteudo-lateral">
-			<h3>Categorias</h3>
-
-			<a href="">Jogos</a><br>
-			<a href="">Celulares</a><br>
-			<a href="">Informática</a><br>
-			<a href="">Eletrônicos</a><br>
-
-		</aside>
-
-		<div id="area-postagens">
+		<div class="item3" id="area-postagens">
 
 			<!-- abertura postagem -->
 			<section id="1" class="postagem">
@@ -83,30 +80,30 @@
 
 				<a href="">Leia mais</a>
 			</section><!--// fechamento postagem -->
-
-
 		</div>
-		<section id="area-lateral">
-			<section class="conteudo-lateral">
-				<h3>Postagens recentes</h3>
+		<div class="item4">
+			<section id="area-lateral">
+				<section class="conteudo-lateral">
+					<h3>Postagens recentes</h3>
 
-				<div class="postagem-lateral">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<a href="#1">Leia mais</a>
-				</div>
+					<div class="postagem-lateral">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<a href="#1">Leia mais</a>
+					</div>
 
-				<div class="postagem-lateral" style="border-bottom: none;">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<a href="#2">Leia mais</a>
-				</div>
+					<div class="postagem-lateral" style="border-bottom: none;">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<a href="#2">Leia mais</a>
+					</div>
 
 
+				</section>
 			</section>
-		</section>
-	</main>
-	<footer id="rodape">
-		Todos os direitos reservados
-	</footer>
+		</div>
+		<div class="item5">
+			Desenvolvido por Sérgio Ribeiro
+		</div>
+	</div>
 </body>
 
 </html>

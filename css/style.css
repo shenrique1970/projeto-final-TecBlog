@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #e6e6e6;
+}
+
+/*
+div {
+  border: 1px solid black;
+}
+*/
+.item1 {
+  grid-area: topo;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item4 {
+  grid-area: titulo;
+}
+
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'topo topo topo topo topo'
+    'menu main main main titulo'
+    'footer footer footer footer footer';
+  gap: 10px;
+  background: #e6e6e6;
+
+}
+
+div .item1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 30px;
+  background: tomato;
+  top: 0;
+  position: fixed;
+}
+
+.item2 {
+  width: 240px;
+  padding-top: 45px;
+  margin: 30px;
+  background: white;
+}
+
+.item3 {
+  width: 550px;
+  padding-top: 55px;
+  margin: 30px;
+  background: white;
+
+}
+
+.item4 {
+  width: 225px;
+  padding-top: 45px;
+  margin: 30px;
+  background: white;
+
+}
+
+.item5 {
+  display: flex;
+  width: 100%;
+  background: tomato;
+  padding: 20px;
+  bottom: 0;
+  position: relative;
+}
+
+.branco {
+  color: white;
+}
+
+/*topo*/
+
+#area-menu>nav a {
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  font-size: 30px;
+}
+
+#area-menu>nav a:hover {
+  color: #f7b600;
+  background: #FFF;
+  text-decoration: none;
+}
+
+/*conteudo lateral*/
+.conteudo-lateral>a {
+  display: flex;
+  align-items: center;
+  padding-left: 72px;
+}
+
+/*Postagem*/
+
+h2 {
+  margin: 8px;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.data-postagem {
+  margin: 8px;
+  text-align: end;
+}
+
+.postagem div>img {
+  width: 520px;
+  margin: 8px;
+}
+
+
+.postagem div>p {
+  margin: 8px;
+}
+
+.postagem>a {
+  padding-left: 8px;
+}
+
+/*titolos*/
+
+.postagem-lateral>p {
+  margin: 8px;
+}
+
+.postagem-lateral>a {
+  padding-left: 8px;
+}
