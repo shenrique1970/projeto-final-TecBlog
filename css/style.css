@@ -98,15 +98,16 @@ div .item1 {
 
 #area-menu>nav a {
   color: white;
-  text-decoration: none;
   padding: 16px;
   font-size: 30px;
 }
 
+#area-menu>nav a {
+	text-decoration: none;
+}
+
 #area-menu>nav a:hover {
-  color: #f7b600;
-  background: #FFF;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /*conteudo lateral*/
@@ -114,6 +115,7 @@ div .item1 {
   display: flex;
   align-items: center;
   padding-left: 72px;
+  text-decoration: none;
 }
 
 /*Postagem*/
@@ -131,6 +133,8 @@ h3 {
   margin-inline-end: 0px;
   text-align: center;
   font-weight: bold;
+  color: #565656;
+  background: #CCC;
 }
 
 .data-postagem {
